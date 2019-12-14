@@ -1,0 +1,19 @@
+server:
+  port: 9001
+
+spring:
+  profiles:
+    active: prod
+  application:
+    name: api-passenger
+
+eureka:
+ instance:
+    hostname: localhost
+    instance-id: api-passenger
+ client:
+    serviceUrl:
+        defaultZone: http://root:root@localhost:7900/eureka/,http://root:root@localhost:7901/eureka/,http://root:root@localhost:7902/eureka/
+
+
+
